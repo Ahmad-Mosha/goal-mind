@@ -5,6 +5,9 @@ import { databaseConfig } from './config/database.config';
 import { UsersModule } from './users/users.module';
 import { ConfigModule } from '@nestjs/config';
 import envConfig from './config/env.config';
+import { LeaguesModule } from './leagues/leagues.module';
+import { TeamsModule } from './teams/teams.module';
+import { PlayersModule } from './players/players.module';
 
 @Module({
   imports: [
@@ -15,6 +18,9 @@ import envConfig from './config/env.config';
     TypeOrmModule.forRoot(databaseConfig),
     AuthModule,
     UsersModule,
+    LeaguesModule,
+    TeamsModule,
+    PlayersModule,
   ],
   controllers: [],
   providers: [],
