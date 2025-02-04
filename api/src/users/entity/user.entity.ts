@@ -3,7 +3,7 @@ import { Column, Entity, PrimaryGeneratedColumn, Unique } from 'typeorm';
 @Entity()
 export class User {
   @PrimaryGeneratedColumn('uuid')
-  id: number;
+  id: string;
 
   @Column()
   firstName: string;
@@ -17,10 +17,4 @@ export class User {
 
   @Column()
   password: string;
-
-  @Column()
-  favoriteTeams: string[];
-
-  @Column()
-  favoritePlayers: string[];
 }
