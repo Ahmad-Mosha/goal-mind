@@ -9,6 +9,7 @@ import { LeaguesModule } from './leagues/leagues.module';
 import { TeamsModule } from './teams/teams.module';
 import { PlayersModule } from './players/players.module';
 import { TimezoneModule } from './timezone/timezone.module';
+import { CountriesModule } from './countries/countries.module';
 
 @Module({
   imports: [
@@ -23,6 +24,7 @@ import { TimezoneModule } from './timezone/timezone.module';
     TeamsModule,
     TimezoneModule,
     PlayersModule,
+    CountriesModule,
   ],
   controllers: [],
   providers: [],
