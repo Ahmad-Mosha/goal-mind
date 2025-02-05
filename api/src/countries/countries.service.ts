@@ -12,7 +12,7 @@ export class CountriesService {
   }
 
   async getCountries() {
-    const response = await fetch(`${this.baseUrl}/all?fields=name,flags`, {
+    const response = await fetch(`${this.baseUrl}/countries`, {
       method: 'GET',
       headers: {
         'x-rapidapi-key': this.apiKey,
