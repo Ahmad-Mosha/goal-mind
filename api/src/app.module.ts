@@ -8,6 +8,7 @@ import envConfig from './config/env.config';
 import { LeaguesModule } from './leagues/leagues.module';
 import { TeamsModule } from './teams/teams.module';
 import { PlayersModule } from './players/players.module';
+import { TimezoneModule } from './timezone/timezone.module';
 
 @Module({
   imports: [
@@ -20,6 +21,7 @@ import { PlayersModule } from './players/players.module';
     UsersModule,
     LeaguesModule,
     TeamsModule,
+    TimezoneModule,
     PlayersModule,
   ],
   controllers: [],
